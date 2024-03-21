@@ -6,7 +6,7 @@
 /*   By: suhelal <suhelal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/19 09:21:31 by suhelal           #+#    #+#             */
-/*   Updated: 2024/03/19 14:48:29 by suhelal          ###   ########.fr       */
+/*   Updated: 2024/03/21 13:57:00 by suhelal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	sort_four(t_stack_list **a, t_stack_list **b)
 	if (num1 > (*a)->next->data && num1 < (*a)->next->next->data)
 	{
 		write_inst_reverse_rotate (a, b, "rra");
-		ft_pa (a, b);
+		write_inst_push (a, b, "pa");
 		write_inst_rotate (a, b, "ra");
 		write_inst_rotate (a, b, "ra");
 	}
